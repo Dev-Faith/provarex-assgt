@@ -10,13 +10,15 @@ import SideMenu from "@/components/SideMenu/SideMenu";
 
 export default function Home() {
   return (
-    <main className="flex gap-[10rem]  h-screen">
+    <main className="flex gap-[2rem]  h-screen ">
       <div className="side-menu">
         <SideMenu />
       </div>
-      <div className="main">
+      <div className="main w-full">
         <div className="main-content">
-          <Navbar />
+          <div className="w-full Navbar ">
+            <Navbar />
+          </div>
           <div className="top-main">
             <ChartCard />
             <ChartCard />

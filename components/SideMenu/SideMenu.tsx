@@ -10,27 +10,32 @@ import { CiSettings } from "react-icons/ci";
 
 const SideMenu = () => {
   return (
-    <div className="flex flex-col gap-[1rem] p-[1rem] bg-gray-200 h-screen pt-[2rem]">
-      <div className="logo flex items-center justify-center text-center">
-        FINTECHI
+    <div className="flex flex-col gap-[1rem] p-[1rem] bg-gray-200 h-screen pt-[2rem] w-[18rem]">
+      <div className="logo flex items-center justify-start text-center gap-[1rem]">
+        <div className="logo h-[2rem] w-[2rem] rounded-full bg-black"></div>
+        <h1 className="font-extrabold">FINTECHI</h1>
       </div>
-      <div className="divider h-[1px] w-[10rem] bg-gray-500 flex items-center justify-center"></div>
+      <div className="divider-container w-full flex justify-center">
+        <div className="divider h-[1px] w-[15rem] bg-gray-400 flex items-center justify-center"></div>
+        </div>
       <div className="main flex flex-col gap-[30rem] mt-[2rem]">
         <div className="menu flex flex-col gap-[1rem]">
           <div className="nav-link flex items-center justify-items-center gap-[.5rem] text-white bg-black py-[.5rem] px-[1rem] rounded-[.5rem]">
             <BiHomeAlt />
             <p>Dashboard</p>
           </div>
-          <div className="nav-link flex items-center justify-items-center gap-[.5rem] px-[1rem]">
+          <div className="nav-link flex items-center justify-items-center gap-[.5rem] px-[1rem] w-full">
             <LiaFileInvoiceSolid className="text-gray-600" />
             <p className="text-gray-600">Invoice</p>
           </div>
-          <div className="nav-link flex items-center justify-items-center gap-[.5rem] px-[1rem]">
+          <div className="nav-link flex items-center justify-items-center gap-[.5rem] px-[1rem] w-full">
             <BiMessageSquareDetail className="text-gray-600" />
-            <div className="flex gap-[2rem] items-center">
+            <div className="flex gap-[2rem] items-center  w-full">
               <p className="text-gray-600">Messages</p>
-              <div className="message-count flex h-[18px] w-[18px] rounded-full bg-black text-[8px] text-white justify-center items-center text-center">
-                11
+              <div className="flex justify-end w-full">
+                <div className="message-count flex h-[18px] w-[18px] rounded-full bg-black text-[8px] text-white justify-center items-center text-center">
+                  11
+                </div>
               </div>
             </div>
           </div>
@@ -40,9 +45,11 @@ const SideMenu = () => {
           </div>
           <div className="nav-link flex items-center justify-items-center gap-[.5rem] px-[1rem]">
             <GiRecycle className="text-gray-600" />
-            <div className="flex gap-[2rem] items-center">
+            <div className="flex gap-[2rem] items-center w-full">
               <p className="text-gray-600">Activity</p>
-              <RiArrowDropDownLine className="text-gray-600" />
+              <div className="icon w-full flex justify-end">
+                <RiArrowDropDownLine className="text-gray-600" />
+              </div>
             </div>
           </div>
           <div className="nav-link flex items-center justify-items-center gap-[.5rem] px-[1rem]">
