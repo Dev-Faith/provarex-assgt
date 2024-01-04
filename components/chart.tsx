@@ -23,9 +23,7 @@ ChartJS.register(
 export const options = {
   responsive: true,
   plugins: {
-    legend: {
-      position: "top" as const,
-    },
+    legend:false,
     title: {
       display: false,
       text: "Chart.js Bar Chart",
@@ -35,21 +33,21 @@ export const options = {
 
 const chance = new Chance();
 
-const labels = ["January", "February", "March", "April", "May", "June", "July"];
+const labels = ["", "", "", "", "",];
 
 export const data = {
   labels,
   datasets: [
     {
-      label: "Dataset 1",
-      data: labels.map(() => chance.integer({ min: 0, max: 1000 })),
-      backgroundColor: "rgba(255, 99, 132, 0.5)",
+      label: "",
+      data: labels.map(() => chance.integer({ min: 0, max: 100 })),
+      backgroundColor: "rgba(0, 0, 0)",
     },
-    {
-      label: "Dataset 2",
-      data: labels.map(() => chance.integer({ min: 0, max: 1000 })),
-      backgroundColor: "rgba(53, 162, 235, 0.5)",
-    },
+    // {
+    //   label: "",
+    //   data: labels.map(() => chance.integer({ min: 0, max: 1000 })),
+    //   backgroundColor: "rgb(229 231 235)",
+    // },
   ],
 };
 

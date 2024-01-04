@@ -6,7 +6,7 @@ const Navbar = () => {
   return (
     <div className="flex w-full px-[2rem] py-[2rem]">
       <div className="page-title">
-        <h1 className="font-extrabold text-xl">Dashboard</h1>
+        <h1 className="font-extrabold text-[2rem]">Dashboard</h1>
       </div>
       <div className="nav-items flex gap-[1.5rem] justify-end w-full items-center">
         <div className="search-icon h-[2.5rem] w-[2.5rem] bg-gray-200 rounded-full flex justify-center items-center p-[.3rem]">
