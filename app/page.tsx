@@ -22,7 +22,7 @@ export default function Home() {
         <div className="w-full Navbar">
           <Navbar />
         </div>
-        <div className="main-content w-3/5 max-h-[88%] overflow-y-auto p-4">
+        <div className="main-content w-3/5 max-h-[88%] overflow-y-auto p-4 flex flex-col gap-[2rem]">
           <div className="top-main flex gap-[2rem]">
             <ChartCard
               title="Business Account"
@@ -43,7 +43,7 @@ export default function Home() {
           <div className="middle-main">
             <LineGraph />
           </div>
-          <div className="bottom-main mt-[10rem]">
+          <div className="bottom-main">
             <SavingsCard />
             <StatisticsCard />
           </div>

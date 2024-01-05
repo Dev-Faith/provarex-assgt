@@ -5,7 +5,7 @@ import { FaLongArrowAltRight, FaLongArrowAltLeft } from "react-icons/fa";
 const LineGraph = () => {
   return (
     <div>
-      <div className="graph w-full mt-[2rem] px-[1rem] flex flex-col gap-[2rem] border boder-gray-200 rounded-[20px] py-[2rem] ">
+      <div className="graph w-full px-[1rem] flex flex-col gap-[2rem] border boder-gray-200 rounded-[20px] py-[2rem] ">
         <div className="top-elements flex  w-full px-[2rem]">
           <div className="card-title w-full font-bold">
             <h1>Money Flow</h1>

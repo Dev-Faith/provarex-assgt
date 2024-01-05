@@ -32,9 +32,19 @@ export const options = {
       text: "Chart.js Line Chart",
     },
   },
+  hitRadius: 30,
+  hoverRadius: 12,
 };
 
-const labels = ["Jan 10", "Jan 11", "Jan 12", "Jan 13", "Jan 14", "Jan 15", "Jan 16"];
+const labels = [
+  "Jan 10",
+  "Jan 11",
+  "Jan 12",
+  "Jan 13",
+  "Jan 14",
+  "Jan 15",
+  "Jan 16",
+];
 
 export const data = {
   labels,
@@ -44,12 +54,14 @@ export const data = {
       data: labels.map(() => chance.integer({ min: -1000, max: 1000 })),
       borderColor: "rgb(0, 0, 0)",
       backgroundColor: "rgb(0, 0, 0)",
+      tension: 0.4,
     },
     {
       label: "Dataset 2",
       data: labels.map(() => chance.integer({ min: -1000, max: 1000 })),
       borderColor: "rgb(88, 28, 135)",
       backgroundColor: "rgb(88, 28, 135)",
+      tension: 0.4,
     },
   ],
 };
