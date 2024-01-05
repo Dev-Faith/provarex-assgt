@@ -18,7 +18,7 @@ const SideMenu = () => {
       <div className="divider-container w-full flex justify-center">
         <div className="divider h-[1px] w-[15rem] bg-gray-400 flex items-center justify-center"></div>
         </div>
-      <div className="main flex flex-col gap-[30rem] mt-[2rem]">
+      <div className="main flex flex-col  mt-[2rem] h-full">
         <div className="menu flex flex-col gap-[1rem]">
           <div className="nav-link flex items-center justify-items-center gap-[.5rem] text-white bg-black py-[.5rem] px-[1rem] rounded-[.5rem]">
             <BiHomeAlt />
@@ -58,7 +58,7 @@ const SideMenu = () => {
           </div>
         </div>
 
-        <div className="bottom-nav flex flex-col gap-[1rem]">
+        <div className="bottom-nav flex flex-col gap-[1rem] h-full justify-end">
           <div className="nav-link flex items-center justify-items-center gap-[.5rem]">
             <FiHelpCircle className="text-[1.3rem] text-gray-600" />
             <p className="text-gray-600">Get Help</p>
