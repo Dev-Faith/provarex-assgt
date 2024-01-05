@@ -10,7 +10,7 @@ import { CiSettings } from "react-icons/ci";
 
 const SideMenu = () => {
   return (
-    <div className="flex flex-col gap-[1rem] p-[1rem] bg-gray-200 h-screen pt-[2rem] w-[18rem]">
+    <div className="flex flex-col gap-[1rem] p-[1rem] bg-gray-200 h-screen pt-[2rem] w-[18rem] pb-[3.5rem]">
       <div className="logo flex items-center justify-start text-center gap-[1rem]">
         <div className="logo h-[2rem] w-[2rem] rounded-full bg-black"></div>
         <h1 className="font-extrabold">FINTECHI</h1>
@@ -55,7 +55,7 @@ const SideMenu = () => {
               <div className="flex gap-[2rem] items-center w-full">
                 <p className="text-gray-600">Activity</p>
                 <div className="icon w-full flex justify-end">
-                  <RiArrowDropDownLine className="text-gray-600" />
+                  <RiArrowDropDownLine className="text-gray-600 text-[2rem]" />
                 </div>
               </div>
             </div>
@@ -69,8 +69,10 @@ const SideMenu = () => {
         </div>
 
         <div className="bottom-nav flex flex-col gap-[1rem] h-full justify-end">
-          <div className="nav-link flex items-center justify-items-center gap-[.5rem]">
-            <FiHelpCircle className="text-[1.3rem] text-gray-600" />
+          <div className="nav-link flex items-center justify-items-center gap-[.6rem]">
+            <div>
+               <FiHelpCircle className="text-[1.2rem] text-gray-600" />
+            </div>
             <p className="text-gray-600">Get Help</p>
           </div>
           <div className="nav-link flex items-center justify-items-center gap-[.5rem]">

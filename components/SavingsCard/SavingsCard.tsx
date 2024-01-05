@@ -7,7 +7,7 @@ import { Progress } from "@/components/ui/progress";
 
 const SavingsCard = () => {
   return (
-    <div className="savings border border-gray-200 rounded-[1rem] w-2/5 p-[1rem] flex flex-col gap-[1rem] py-[2rem] px-[1.5rem]">
+    <div className="savings border border-gray-200 rounded-[1rem] w-2/5 md:w-full p-[1rem] flex flex-col justify-between py-[2rem] px-[1.5rem]">
       <div className="savings-top flex items-center">
         <h1 className="text-[1.5rem] font-bold">Saving</h1>
         <div className="this-month flex justify-end w-full items-center ">
@@ -61,7 +61,7 @@ const SavingsCard = () => {
           </div>
         </div>
         <div className="progress-bar">
-          <Progress value={40} className=""/>
+          <Progress value={40} className="" />
         </div>
       </div>
     </div>
