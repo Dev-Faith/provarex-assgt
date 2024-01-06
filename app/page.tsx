@@ -28,7 +28,7 @@ useEffect(() => {
 }, []);
 
   return (
-      <main className="flex gap-[4rem]  h-screen ">
+      <main className="flex gap-[4rem]  h-screen overflow-y-hidden">
         <div className="side-menu ">
           <SideMenu />
         </div>
@@ -36,34 +36,36 @@ useEffect(() => {
           <div className="w-full Navbar">
             <Navbar hasScrolled={hasScrolled} setHasScrolled={setHasScrolled} />
           </div>
-          <div className="main-content w-3/5 max-h-[88%] overflow-y-auto p-4 flex flex-col gap-[2rem] h-full">
-            <div className="top-main flex gap-[2rem] min-h-[35%] max-h-[35%] pb-[2rem] overflow-y-auto max-w-full ">
-              <ChartCard
-                title="Business Account"
-                amount="$34,198.00"
-                badge={<CgProfile />}
-              />
-              <ChartCard
-                title="Tax Reserve"
-                amount="$5,248.80"
-                badge={<BiTask />}
-              />
-              <ChartCard
-                title="Savings"
-                amount="$2,580.11"
-                badge={<IoBriefcaseOutline />}
-              />
+          <div className="flex h-full">
+            <div className="main-content w-3/5 max-h-[90%] overflow-y-auto p-4 flex flex-col gap-[2rem] h-full">
+              <div className="top-main flex gap-[2rem] min-h-[35%] max-h-[35%] pb-[2rem] overflow-y-auto max-w-full ">
+                <ChartCard
+                  title="Business Account"
+                  amount="$34,198.00"
+                  badge={<CgProfile />}
+                />
+                <ChartCard
+                  title="Tax Reserve"
+                  amount="$5,248.80"
+                  badge={<BiTask />}
+                />
+                <ChartCard
+                  title="Savings"
+                  amount="$2,580.11"
+                  badge={<IoBriefcaseOutline />}
+                />
+              </div>
+              <div className="middle-main">
+                <LineGraph />
+              </div>
+              <div className="bottom-main flex gap-[2rem] min-h-[50%] max-h-[50%] pb-[2rem]  max-w-full">
+                <SavingsCard />
+                <StatisticsCard />
+              </div>
             </div>
-            <div className="middle-main">
-              <LineGraph />
+            <div className="mini">
+              Hello
             </div>
-            <div className="bottom-main flex gap-[2rem] min-h-[50%] max-h-[50%] pb-[2rem]  max-w-full">
-              <SavingsCard />
-              <StatisticsCard />
-            </div>
-          </div>
-          <div className="mini-content">
-            <div className="wallet"></div>
           </div>
         </div>
       </main>
