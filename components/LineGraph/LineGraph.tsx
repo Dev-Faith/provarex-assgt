@@ -20,8 +20,8 @@ const LineGraph = () => {
               <p>Expenses</p>
             </div>
             <div  className="flex">
-              <div className="date flex items-center bg-gray-200 py-[.3rem] px-[.5rem] w-full rounded-[7px] justify-end md:text-[.7rem]">
-                <p className="w-full flex justify-end">Jan 10 - Jan 16</p>
+              <div className="date flex items-center bg-gray-200 py-[.3rem] px-[.5rem] w-full rounded-[7px] justify-end md:text-[.7rem] cursor-pointer">
+                <p className="w-full flex justify-end ">Jan 10 - Jan 16</p>
                 <RiArrowDropDownLine className="text-[.9rem]" />
               </div>
             </div>

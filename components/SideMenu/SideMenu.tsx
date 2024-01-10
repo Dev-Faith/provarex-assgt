@@ -10,7 +10,7 @@ import { CiSettings } from "react-icons/ci";
 
 const SideMenu = () => {
   return (
-    <div className="flex flex-col gap-[1rem] p-[1rem] bg-gray-200 h-screen pt-[2rem] w-[18rem] pb-[3.5rem]">
+    <div className="flex flex-col gap-[1rem] p-[1rem] bg-gray-100 h-screen pt-[2rem] lg:w-[15vw] w-full pb-[3.5rem]">
       <div className="logo flex items-center justify-start text-center gap-[1rem]">
         <div className="logo h-[2rem] w-[2rem] rounded-full bg-black"></div>
         <h1 className="font-extrabold">FINTECHI</h1>

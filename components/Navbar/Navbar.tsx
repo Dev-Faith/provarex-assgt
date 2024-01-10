@@ -3,17 +3,13 @@ import {useState, useEffect} from "react"
 import { RiArrowDropDownLine , RiSearch2Line} from "react-icons/ri";
 import { BsBell } from "react-icons/bs";
 
-interface scroll {
-  hasScrolled: boolean;
-  setHasScrolled: (number:boolean) => void;
-}
 
-const Navbar =({hasScrolled,setHasScrolled}:scroll)=> {
+const Navbar =()=> {
 
 
 
   return (
-    <div className={`flex w-full px-[2rem] py-[2rem] transition-all ease-in-out duration-300 ${hasScrolled ? 'bg-opacity-80 backdrop-blur-sm' : 'bg-transparent'} bg-white`}>
+    <div className="flex w-full px-[4rem] py-[2rem] bg-white pl-[4rem]">
       <div className="page-title">
         <h1 className="font-extrabold text-[2rem]">Dashboard</h1>
       </div>

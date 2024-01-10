@@ -59,8 +59,8 @@ export const data = {
     {
       label: "Dataset 2",
       data: labels.map(() => chance.integer({ min: -1000, max: 1000 })),
-      borderColor: "rgb(88, 28, 135)",
-      backgroundColor: "rgb(88, 28, 135)",
+      borderColor: " rgb(109 40 217)",
+      backgroundColor: " rgb(109 40 217)",
       tension: 0.4,
     },
   ],

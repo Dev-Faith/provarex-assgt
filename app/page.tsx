@@ -12,33 +12,22 @@ import { CgProfile } from "react-icons/cg";
 import { BiTask } from "react-icons/bi";
 import { IoBriefcaseOutline } from "react-icons/io5";
 import LineGraph from "@/components/LineGraph/LineGraph";
-
+import MiniConst from "@/components/mini-cont/mini-cont";
+import useMediaQueries from "@/lib/mediaquery"
 
 export default function Home() {
-  const [hasScrolled, setHasScrolled] = useState(false);
-
-const handleScroll = () => {
-  const offset = window.scrollY;
-  setHasScrolled(offset > 50); // Adjust the number based on when you want the effect to trigger
-};
-
-useEffect(() => {
-  window.addEventListener("scroll", handleScroll);
-  return () => window.removeEventListener("scroll", handleScroll);
-}, []);
-
+ 
   return (
-      <main className="flex gap-[4rem]  h-screen overflow-y-hidden">
-        <div className="side-menu ">
+      <div className="flex h-screen max-w-screen overflow-x-hidden overflow-y-hidden w-full gap-[2rem]">
+        {/* <div className="side-menu "> */}
           <SideMenu />
-        </div>
-        <div className="main w-full">
-          <div className="w-full Navbar">
-            <Navbar hasScrolled={hasScrolled} setHasScrolled={setHasScrolled} />
-          </div>
-          <div className="flex h-full">
-            <div className="main-content w-3/5 max-h-[90%] overflow-y-auto p-4 flex flex-col gap-[2rem] h-full">
-              <div className="top-main flex gap-[2rem] min-h-[35%] max-h-[35%] pb-[2rem] overflow-y-auto max-w-full ">
+        {/* </div> */}
+      <div className="main h-[85%]  flex items-center flex-col w-[83vw]">
+        {/* @ts-ignore */}
+            <Navbar />
+          <div className="flex h-full  items-start justify-center w-[100%] gap-[1rem]">
+            <main className="main-content  max-h-[100%] overflow-y-auto flex flex-col gap-[2rem] h-full w-[70vw] px-[1rem] ">
+              <div className="top-main flex gap-[2rem] min-h-[35%] max-h-[35%] pb-[2rem] overflow-x-auto max-w-full ">
                 <ChartCard
                   title="Business Account"
                   amount="$34,198.00"
@@ -58,16 +47,16 @@ useEffect(() => {
               <div className="middle-main">
                 <LineGraph />
               </div>
-              <div className="bottom-main flex gap-[2rem] min-h-[50%] max-h-[50%] pb-[2rem]  max-w-full">
+              <div className="bottom-main flex min-h-[80%]  max-w-[100%] gap-[2rem] items-center overflow-x-auto">
                 <SavingsCard />
                 <StatisticsCard />
               </div>
-            </div>
-            <div className="mini">
-              Hello
-            </div>
+            </main>
+                <div className="mini-cont max-w-full flex justify-center min-h-[100%] max-h-[100%] pt-[14rem] py-[4rem] overflow-y-auto overflow-x-hidden flex-col gap-[2rem] items-center p-[4rem]">
+                    <MiniConst/>
+                </div>
           </div>
         </div>
-      </main>
+      </div>
   );
 }
