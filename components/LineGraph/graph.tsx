@@ -23,10 +23,11 @@ ChartJS.register(
 );
 const chance = new Chance();
 
-// @ts-ignore
+
 export const options = {
   responsive: true,
   plugins: {
+    // @ts-ignore
     legend: false,
     title: {
       display: false,
@@ -68,5 +69,6 @@ export const data = {
 };
 
 export default function Graph() {
+  // @ts-ignore
   return <Line options={options} data={data} />;
 }
