@@ -13,7 +13,6 @@ import { BiTask } from "react-icons/bi";
 import { IoBriefcaseOutline } from "react-icons/io5";
 import LineGraph from "@/components/LineGraph/LineGraph";
 import MiniConst from "@/components/mini-cont/mini-cont";
-import useMediaQueries from "@/lib/mediaquery"
 
 export default function Home() {
  
