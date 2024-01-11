@@ -1,5 +1,6 @@
 import React from "react";
 
+// @ts-ignore
 const CircularProgressBar = ({ value, max }) => {
   // Calculate the circumference of the circle
   const radius = 80; // radius of the circle
