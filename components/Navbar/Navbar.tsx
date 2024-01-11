@@ -2,7 +2,8 @@ import React from 'react'
 import {useState, useEffect} from "react"
 import { RiArrowDropDownLine , RiSearch2Line} from "react-icons/ri";
 import { BsBell } from "react-icons/bs";
-
+import profile from "./profile.jpg"
+import Image from "next/image"
 
 const Navbar =()=> {
 
@@ -21,7 +22,7 @@ const Navbar =()=> {
           <BsBell />
         </div>
         <div className="profile-image flex gap-[.5rem] items-center bg-gray-200 px-[.5rem] py-[.5rem] rounded-[30px]">
-          <div className="h-[1.8rem] w-[1.8rem] bg-black rounded-full flex justify-center items-center p-[.3rem] text-white">
+          <div className="h-[1.8rem] w-[1.8rem] rounded-full flex justify-center items-center p-[.3rem] overflow-hidden text-white bg-black">
             <p>A</p>
           </div>
           <p>Momina K.</p>
