@@ -52,5 +52,6 @@ export const data = {
 };
 
 export default function Chart() {
+  // @ts-ignore
   return <Bar options={options} data={data}  />;
 }
