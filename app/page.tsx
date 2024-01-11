@@ -20,14 +20,14 @@ export default function Home() {
   return (
       <div className="flex h-screen max-w-screen overflow-x-hidden overflow-y-hidden w-full gap-[2rem]">
         {/* <div className="side-menu "> */}
-          <SideMenu />
+          <SideMenu className="sm:hidden"/>
         {/* </div> */}
       <div className="main h-[85%]  flex items-center flex-col w-[83vw]">
         {/* @ts-ignore */}
             <Navbar />
           <div className="flex h-full  items-start justify-center w-[100%] gap-[1rem]">
             <main className="main-content  max-h-[100%] overflow-y-auto flex flex-col gap-[2rem] h-full w-[70vw] px-[1rem] ">
-              <div className="top-main flex gap-[2rem] min-h-[35%] max-h-[35%] pb-[2rem] overflow-x-auto max-w-full ">
+              <div className="top-main flex gap-[2rem] min-h-[35%] max-h-[35%] pb-[2rem] overflow-x-auto max-w-full scroll-smooth ">
                 <ChartCard
                   title="Business Account"
                   amount="$34,198.00"
@@ -47,12 +47,12 @@ export default function Home() {
               <div className="middle-main">
                 <LineGraph />
               </div>
-              <div className="bottom-main flex min-h-[80%]  max-w-[100%] gap-[2rem] items-center overflow-x-auto">
+              <div className="bottom-main flex min-h-[80%]  max-w-[100%] gap-[2rem] items-center overflow-x-auto scroll-smooth" >
                 <SavingsCard />
                 <StatisticsCard />
               </div>
             </main>
-                <div className="mini-cont max-w-full flex justify-center min-h-[100%] max-h-[100%] pt-[14rem] py-[4rem] overflow-y-auto overflow-x-hidden flex-col gap-[2rem] items-center p-[4rem]">
+                <div className="mini-cont max-w-full flex justify-center min-h-[100%] max-h-[100%] pt-[8.5rem] py-[4rem] overflow-y-auto overflow-x-hidden flex-col gap-[2rem] items-center p-[4rem] scroll-smooth">
                     <MiniConst/>
                 </div>
           </div>

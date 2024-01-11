@@ -23,6 +23,7 @@ ChartJS.register(
 );
 const chance = new Chance();
 
+// @ts-ignore
 export const options = {
   responsive: true,
   plugins: {
