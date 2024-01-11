@@ -20,7 +20,8 @@ export default function Home() {
   return (
       <div className="flex h-screen max-w-screen overflow-x-hidden overflow-y-hidden w-full gap-[2rem]">
         {/* <div className="side-menu "> */}
-          <SideMenu className="sm:hidden"/>
+        {/* @ts-ignore */}
+          <SideMenu/>
         {/* </div> */}
       <div className="main h-[85%]  flex items-center flex-col w-[83vw]">
         {/* @ts-ignore */}
