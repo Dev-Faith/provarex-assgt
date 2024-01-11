@@ -30,7 +30,7 @@ const MiniConst = () => {
                 <div>
                 <div className="Balance&icon text-gray-400 flex items-center gap-[.5rem] mx-[1rem]">
                     <p>Balance</p>
-                    <FaRegEye/>
+                    <FaRegEye className="cursor-pointer"/>
                 </div>
                 <div className="balance&Visa text-white flex items-center justify-between mx-[1rem]">
                     <p className="text-[1.5rem]">$34,198.00</p>
