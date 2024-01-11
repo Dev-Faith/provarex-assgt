@@ -52,7 +52,7 @@ export default function Home() {
                 <StatisticsCard />
               </div>
             </main>
-                <div className="mini-cont max-w-full flex justify-center min-h-[100%] max-h-[100%] pt-[8.5rem] py-[4rem] overflow-y-auto overflow-x-hidden flex-col gap-[2rem] items-center p-[4rem] scroll-smooth">
+                <div className="mini-cont max-w-full flex justify-center min-h-[100%] max-h-[100%] pt-[11.5rem] py-[4rem] overflow-y-auto overflow-x-hidden flex-col gap-[2rem] items-center p-[4rem] scroll-smooth">
                     <MiniConst/>
                 </div>
           </div>
