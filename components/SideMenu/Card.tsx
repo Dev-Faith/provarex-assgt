@@ -1,4 +1,18 @@
-import React from "react";
+"use client"
+
+import { Button } from "@/components/ui/button"
+import { Input } from "@/components/ui/input"
+import { Label } from "@/components/ui/label"
+import {
+  Sheet,
+  SheetClose,
+  SheetContent,
+  SheetDescription,
+  SheetFooter,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from "@/components/ui/sheet"
 import { TfiLayoutMenuSeparated } from "react-icons/tfi";
 import { MdOutlineAddCard } from "react-icons/md";
 import { TbFileInvoice } from "react-icons/tb";
@@ -8,10 +22,16 @@ import { SiUpwork } from "react-icons/si";
 import { SiUplabs } from "react-icons/si";
 import Image from "next/image";
 import chip from "./microchip.jpeg"
-import { RiVisaLine } from "react-icons/ri";
-const MiniConst = () => {
-    return (
-        <div className="  border-2 rounded-[1.5rem] p-[2rem] md:flex flex-col gap-[2rem] h-auto justify-center  items-center">
+import { RiVisaLine } from "react-icons/ri";   
+import { CiCreditCard1 } from "react-icons/ci";     
+
+export function Card() {
+  return (
+    <div >
+    <Sheet>
+    <SheetTrigger><CiCreditCard1/></SheetTrigger>
+    <SheetContent side="left" className="w-[100vw] overflow-y-auto" >
+   <div className="  border-2 rounded-[1.5rem] p-[2rem] gap-[.6rem] flex flex-col h-auto items-center  mt-[2rem]">
             <div className="title flex w-full items-center justify-between ">
                 <div className="wallet">
                     <p className="font-bold text-[1.5rem]">Wallet</p>
@@ -65,7 +85,7 @@ const MiniConst = () => {
                 <p className="font-bold">Recent Activity</p>
                 <p className="text-gray-500 cursor-pointer" >View all</p>
             </div>
-            <div className="activities grid gap-[2rem]">
+            <div className="activities grid gap-[2rem] overflow-y-auto min-h-[35vh] max-h-[35vh]">
                 <div className="activity flex justify-between cursor-pointer">
                     <div className="logo&Title flex items-center gap-[2rem]">
                         <div className="logo"><FaStripeS className="text-violet-700"/></div>
@@ -120,7 +140,8 @@ const MiniConst = () => {
                 </div>
             </div>
         </div>
-    )
-};
-
-export default MiniConst;
+    </SheetContent>
+  </Sheet>
+</div>
+  )
+}

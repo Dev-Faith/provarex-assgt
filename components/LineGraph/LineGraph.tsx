@@ -10,7 +10,7 @@ const LineGraph = () => {
           <div className="card-title w-1/2 font-bold">
             <h1>Money Flow</h1>
           </div>
-          <div className="card-info flex w-full justify-end gap-[1rem]">
+          <div className="card-info flex flex-col md:flex-row items-center w-full md:justify-end gap-[1rem]">
             <div className="income flex items-center gap-[.3rem]">
               <FaLongArrowAltRight />
               <p>Income</p>

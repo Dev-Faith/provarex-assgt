@@ -3,7 +3,7 @@ import { IoIosArrowForward } from "react-icons/io";
 import CircularProgressBar from "../circularBar/circular";
 const StatisticsCard = () => {
   return (
-    <div className="border border-gray-200 rounded-[1rem] min-w-[65%] md:w-full p-[1rem] flex flex-col justify-between py-[2rem] px-[1.5rem] min-h-[75%] lg:p-[4rem]">
+    <div className="border border-gray-200 rounded-[1rem] md:min-w-[65%] md:w-full p-[1rem] w-full flex flex-col justify-between py-[2rem] px-[1.5rem] md:min-h-[75%] gap-[2rem] md:gap-0 lg:p-[4rem]">
       <div className="title flex items-center">
         <h1 className="text-[1.5rem] font-bold">Statistics</h1>
         <div className="this-month flex justify-end w-full items-center ">
@@ -14,7 +14,7 @@ const StatisticsCard = () => {
         </div>
       </div>
       <div>
-        <div className="mini-card h-auto py-[2rem] px-[2rem] bg-gray-200 rounded-[2rem] flex justify-between min-w-[55%]">
+        <div className="mini-card h-auto py-[2rem] px-[2rem] bg-gray-200 rounded-[2rem] flex justify-between md:min-w-[55%]">
           <CircularProgressBar value={88} max={100} />
           <div className="list-itemss w-full justify-end grid gap-[1rem]">
             <div className="list-items flex items-center justify-end gap-[1rem]">

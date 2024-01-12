@@ -1,23 +1,45 @@
-import React from "react";
+"use client"
+
+import { Button } from "@/components/ui/button"
+import { Input } from "@/components/ui/input"
+import { Label } from "@/components/ui/label"
+import {
+  Sheet,
+  SheetClose,
+  SheetContent,
+  SheetDescription,
+  SheetFooter,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from "@/components/ui/sheet"
+import { CiMenuFries } from "react-icons/ci";
+import { RiArrowDropDownLine , RiSearch2Line} from "react-icons/ri";
+import { BsBell } from "react-icons/bs";
 import { BiHomeAlt, BiMessageSquareDetail } from "react-icons/bi";
 import { LiaFileInvoiceSolid } from "react-icons/lia";
 import { GiRecycle } from "react-icons/gi";
 import { TfiWallet } from "react-icons/tfi";
 import { MdOutlineAnalytics } from "react-icons/md";
-import { RiArrowDropDownLine } from "react-icons/ri";
 import { FiHelpCircle } from "react-icons/fi";
 import { CiSettings } from "react-icons/ci";
+import {useState} from "react"
 
-const SideMenu = () => {
+export function Burger() {
+  const [isClicked, setIsClicked] = useState(false); 
   return (
-    <div className="md:flex flex-col gap-[1rem] p-[1rem] bg-gray-100 h-screen pt-[2rem] lg:w-[15vw] w-full pb-[3.5rem] hidden">
-      <div className="logo flex items-center justify-start text-center gap-[1rem]">
-        <div className="logo h-[2rem] w-[2rem] rounded-full bg-black"></div>
-        <h1 className="font-extrabold">FINTECHI</h1>
+    <div>
+    <Sheet>
+    <SheetTrigger><CiMenuFries className={``} onClick ={()=>setIsClicked(true)}/></SheetTrigger>
+    <SheetContent setIsClicked = {setIsClicked}>
+    <div className=" h-[90%] flex flex-col items-center mt-[2rem]">
+      <div className="flex flex-col items-center gap-[1rem]">
+      <div className="h-[4rem] w-[4rem] bg-black rounded-full text-white flex items-center justify-center text-[2rem] justify-self-center">
+        <p>A</p>
       </div>
-      <div className="divider-container w-full flex justify-center">
-        <div className="divider h-[1px] w-[15rem] bg-gray-400 flex items-center justify-center"></div>
+      <p>Momina K.</p>
       </div>
+      
       <div className="main flex flex-col  mt-[2rem] h-full">
         <div className="menu flex flex-col gap-[1rem]">
           <div className="nav-link flex items-center justify-items-center gap-[.5rem] text-white bg-black py-[.5rem] px-[1rem] rounded-[.5rem] cursor-pointer">
@@ -68,7 +90,7 @@ const SideMenu = () => {
           </div>
         </div>
 
-        <div className="bottom-nav flex flex-col gap-[1rem] h-full justify-end">
+        <div className="bottom-nav flex flex-col gap-[1rem] h-full justify-end px-[.5rem]">
           <div className="nav-link flex items-center justify-items-center gap-[.6rem]">
             <div>
                <FiHelpCircle className="text-[1.2rem] text-gray-600" />
@@ -82,7 +104,8 @@ const SideMenu = () => {
         </div>
       </div>
     </div>
-  );
-};
-
-export default SideMenu;
+    </SheetContent>
+  </Sheet>
+</div>
+  )
+}

@@ -9,7 +9,7 @@ interface Card {
 
 const ChartCard = ({ title, amount, badge }: Card) => {
   return (
-    <div className="px-[1rem] border boder-gray-200 pt-[1rem] rounded-[20px] w-2/5 flex flex-col justify-around h-auto">
+    <div className="px-[1rem] border boder-gray-200 pt-[1rem] rounded-[20px] md:w-2/5 w-full flex flex-col justify-around h-auto">
       <div className="encapsule flex items-center w-full px-[1rem] ">
         <div className="title-amount w-full">
           <p className="text-[.7rem] w-full text-gray-400">{title}</p>
