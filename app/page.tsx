@@ -27,7 +27,7 @@ export default function Home() {
             <Navbar />
           <div className="flex md:h-full flex-col md:flex-row md:items-start md:justify-center md:w-[100%] md:gap-[1rem] overfloy-y-auto md:overfloy-y-hidden w-full">
             <main className="main-content  md:max-h-[100%] md:overflow-y-auto flex flex-col gap-[2rem] md:h-full md:w-[70vw] p-[.5rem] w-full">
-              <div className="top-main flex flex-col md:flex-row gap-[2rem] md:justify-start md:min-h-[35%] md:max-h-[35%] md:pb-[2rem] md:overflow-x-auto md:max-w-full w-full md:scroll-smooth p-[2rem] md:p-0 ">
+              <div className="top-main flex flex-col md:flex-row gap-[2rem] md:justify-start md:min-h-[35%] md:max-h-[35%] md:pb-[2rem] md:overflow-x-auto md:max-w-full w-full md:scroll-smooth p-[2rem] ">
                 <ChartCard
                   title="Business Account"
                   amount="$34,198.00"
