@@ -23,15 +23,13 @@ import { TfiWallet } from "react-icons/tfi";
 import { MdOutlineAnalytics } from "react-icons/md";
 import { FiHelpCircle } from "react-icons/fi";
 import { CiSettings } from "react-icons/ci";
-import {useState} from "react"
 
 export function Burger() {
-  const [isClicked, setIsClicked] = useState(false); 
   return (
     <div>
     <Sheet>
-    <SheetTrigger><CiMenuFries className={``} onClick ={()=>setIsClicked(true)}/></SheetTrigger>
-    <SheetContent setIsClicked = {setIsClicked}>
+    <SheetTrigger><CiMenuFries className={``}/></SheetTrigger>
+    <SheetContent>
     <div className=" h-[90%] flex flex-col items-center mt-[2rem]">
       <div className="flex flex-col items-center gap-[1rem]">
       <div className="h-[4rem] w-[4rem] bg-black rounded-full text-white flex items-center justify-center text-[2rem] justify-self-center">
